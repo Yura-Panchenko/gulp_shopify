@@ -1,0 +1,17 @@
+.btn {
+	@include animate (background color);
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	padding: $btn-padding;
+	font-size: $btn-font-size;
+	line-height: $btn-line-height;
+	font-weight: $btn-font-weight;
+	color: $btn-color;
+	text-align: center;
+	border: $btn-border-width solid $btn-border-color;
+	border-radius: $btn-border-radius;
+	box-shadow: $btn-box-shadow;
+	background-color: $btn-background;
+	user-select: none;
+}

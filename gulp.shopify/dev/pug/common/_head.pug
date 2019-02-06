@@ -1,0 +1,18 @@
+include ../mixins/_mixin
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Shopify
+		// delete when transferring to serve
+		link(rel='stylesheet', href='css/theme.css')
+		link(rel='stylesheet', href='style.css')
+	//- -var bodyClass= "home"; // add class on body
+	body(class= bodyClass)
+		#wrapper
+			block content
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script.
+			window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')
+		script(src='js/jquery.main.js')
